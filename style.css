@@ -1,13 +1,31 @@
 body {
     font-family: 'Segoe UI', sans-serif;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  body.light-mode {
+    background-color: #f8f9fa !important;
+    color: #212529 !important;
+  }
+  
+  body.light-mode .accordion-button {
+    background-color: #e9ecef;
+  }
+  
+  body.light-mode .list-group-item {
+    background-color: #fff;
+    color: #000;
   }
   
   .list-group-item {
     border: none;
-    transition: background-color 0.2s;
   }
   
   .list-group-item:hover {
     background-color: #343a40;
+  }
+  
+  body.light-mode .list-group-item:hover {
+    background-color: #dee2e6;
   }
   
