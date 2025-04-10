@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", () => {
       "🔧 Infraestruturas VPN Seguras: OpenVPN Access Server e WireGuard em site-to-site.",
       "🧱 Firewalls Linux: Topologias com múltiplas firewalls, DMZ e controlo de tráfego.",
       "🌐 Serviços Linux: DHCP, Apache, Samba, routing em redes complexas.",
-      "📊 Análise de Dados: OCD, visualização e testes estatísticos."
+      "📊 Análise de Dados: Projetos estatísticos sobre temas como Perturbação Obsessivo-Compulsiva (OCD), com visualização de dados e testes de hipóteses."
     ];
   
     const explore = [

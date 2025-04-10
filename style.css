@@ -29,7 +29,8 @@ body {
   
   /* Tema claro */
   body.light-mode .background-image {
-    background-image: url('images/bg_w.jpg');
+    filter: blur(0px);
+    background-image: url('images/4.jpeg');
   }
   
   /* Tema escuro */
