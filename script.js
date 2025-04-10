@@ -43,8 +43,24 @@ document.addEventListener("DOMContentLoaded", () => {
     // Tema claro/escuro
     const toggleThemeBtn = document.getElementById("toggleThemeBtn");
     toggleThemeBtn.addEventListener("click", () => {
-      document.body.classList.toggle("light-mode");
-      toggleThemeBtn.textContent = document.body.classList.contains("light-mode") ? "🌙 Modo Escuro" : "☀️ Modo Claro";
+      const body = document.body;
+  
+      if (body.classList.contains("dark-mode")) {
+        // Se já estiver no modo escuro, muda para claro
+        body.classList.remove("dark-mode");
+        body.classList.add("light-mode");
+        toggleThemeBtn.textContent = "🌙 Modo Escuro";
+      } else {
+        // Se estiver no modo claro, muda para escuro
+        body.classList.remove("light-mode");
+        body.classList.add("dark-mode");
+        toggleThemeBtn.textContent = "☀️ Modo Claro";
+      }
     });
+  
+    // Definir o modo inicial (escuro ou claro)
+    const initialMode = localStorage.getItem("theme") || "dark";
+    document.body.classList.add(initialMode + "-mode");
+    toggleThemeBtn.textContent = initialMode === "dark" ? "🌙 Modo Claro" : "☀️ Modo Escuro";
   });
   
