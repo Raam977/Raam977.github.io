@@ -1,0 +1,13 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  .list-group-item {
+    border: none;
+    transition: background-color 0.2s;
+  }
+  
+  .list-group-item:hover {
+    background-color: #343a40;
+  }
+  
